@@ -234,7 +234,7 @@ export default class Slider extends PureComponent {
     var thumbLeft = value.interpolate({
       inputRange: [minimumValue, maximumValue],
       outputRange: [0, containerSize.width - thumbSize.width],
-      //extrapolate: 'clamp',
+      extrapolate: 'clamp',
     });
     var valueVisibleStyle = {};
     if (!allMeasured) {
